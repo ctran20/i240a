@@ -1,0 +1,2121 @@
+Script started on 2020-01-30 10:41:16-05:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="140" LINES="36"]
+bash: /home/umrigar/cs240/bin/student.rc: Permission denied
+ctran20@remote03:~/i240a/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+ctran20@remote03:~/i240a/submit/lab1$ cd 0-hello/
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ ls -l
+total 4
+-rw-r----- 1 ctran20 ctran20 79 Jan 30 10:34 hello.cc
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ make hello
+g++     hello.cc   -o hello
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ ls -l
+total 24
+-rwxr-x--- 1 ctran20 ctran20 17248 Jan 30 10:42 hello
+-rw-r----- 1 ctran20 ctran20    79 Jan 30 10:34 hello.cc
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ ./hew[Kllo 
+hello world
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ -[Kmake -p | less
+make: *** No targets specified and no makefile found.  Stop.
+[?1049h[22;0;0t[?1h=# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jan 30 10:43:00 2020
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepack ages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+# environment
+XDG_SESSION_TYPE = tty
+# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/ctran20/projects/i240a/submit/lab1/0-hello
+# makefile
+:[K[KSHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# environment
+_ = /usr/bin/make
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# default
+LINK.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# default
+OUTPUT_OPTION = -o $@
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile
+MAKEFILE_LIST := 
+# 'override' directive
+GNUMAKEFLAGS := 
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/14797/bus
+# default
+CC = cc
+# default
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# default
+CPP = $(CC) -E
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+:[K[K# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_14797_2QGAPsteP7
+# environment
+SSH_CONNECTION = 198.255.139.107 59320 128.226.114.203 22
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jv m/java-8-oracle/jre/bin
+# default
+LD = ld
+# default
+TEXI2DVI = texi2dvi
+# default
+YACC = yacc
+# environment
+SSH_TTY = /dev/pts/5
+# environment
+XDG_RUNTIME_DIR = /run/user/14797
+# default
+ARFLAGS = rv
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINT = lint
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# default
+YACC.m = $(YACC) $(YFLAGS)
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# default
+AR = ar
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlin :[K[Kk load
+# default
+TANGLE = tangle
+# default
+GET = get
+# automatic
+%F = $(notdir $%)
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+CTANGLE = ctangle
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# default
+LINK.C = $(LINK.cc)
+# environment
+PWD = /home/ctran20/i240a/submit/lab1/0-hello
+# default
+.LOADED := 
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XDG_SESSION_CLASS = user
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOME = /home/ctran20
+# environment
+J2REDIR = /usr/lib/jvm/java-8-oracle/jre
+:[K[K# environment
+LOGNAME = ctran20
+# environment
+J2SDKDIR = /usr/lib/jvm/java-8-oracle
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+COMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# default
+AS = as
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# environment
+JAVA_HOME = /usr/lib/jvm/java-8-oracle
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environment
+XDG_SESSION_ID = 35702
+# environment
+USER = ctran20
+# default
+FC = f77
+# makefile
+.DEFAULT_GOAL := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+WEAVE = weave
+# default
+:[K[KMAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/ctran20/i240a/submit/lab1
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LEX = lex
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# environment
+SSH_CLIENT = 198.255.139.107 59320 22
+# environment
+MAIL = /var/mail/ctran20
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+:[K[K# default
+M2C = m2c
+# default
+MAKEFILES := 
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# default
+CXX = g++
+# default
+COFLAGS = 
+# default
+COMPILE.C = $(COMPILE.cc)
+# automatic
+^F = $(notdir $^)
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch  .web .sh .elc .el
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+DERBY_HOME = /usr/lib/jvm/java-8-oracle/db
+# default
+.RECIPEPREFIX := 
+:[K[K[HM+F = $(notdir $+)
+[HM# automatic
+[HMCOMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+[HM# default
+[HM+D = $(patsubst %/,%,$(dir $+))
+[HM# automatic
+[HMLEX.m = $(LEX) $(LFLAGS) -t
+[HM# default
+[HMLEX.l = $(LEX) $(LFLAGS) -t
+[HM# default
+[HMMAIL = /var/mail/ctran20
+[HM# environment
+[HMSSH_CLIENT = 198.255.139.107 59320 22
+[HM# environment
+[HMMFLAGS = -p
+[HM# environment
+[HMMAKEFLAGS = p
+[HM# makefile
+[HMLEX = lex
+[HM# default
+[HMCOMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+[HM# default
+[HM*F = $(notdir $*)
+[HM# automatic
+[HMPC = pc
+[HM# default
+[HM.VARIABLES := 
+[HM# default
+[HMOLDPWD = /home/ctran20/i240a/submit/lab1
+[HM# environment
+[HMF77 = $(FC)
+[HM# default
+[HMLINK.cpp = $(LINK.cc)
+[HM# default
+[HMMAKE_COMMAND := make
+[36;1H[K:[K[K[HM# default
+[HMWEAVE = weave
+[HM# default
+[HM%D = $(patsubst %/,%,$(dir $%))
+[HM# automatic
+[HM.DEFAULT_GOAL := 
+[HM# makefile
+[HMFC = f77
+[HM# default
+[HMUSER = ctran20
+[HM# environment
+[HMXDG_SESSION_ID = 35702
+[HM# environment
+[HMCOMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+[HM# default
+[HMJAVA_HOME = /usr/lib/jvm/java-8-oracle
+[HM# environment
+[HMPREPROCESS.S = $(CC) -E $(CPPFLAGS)
+[HM# default
+[HMAS = as
+[HM# default
+[HMSHLVL = 1
+[HM# environment
+[HMMAKE = $(MAKE_COMMAND)
+[HM# default
+[HMCOMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+[HM# default
+[HMMAKELEVEL := 0
+[HM# environment
+[HM^D = $(patsubst %/,%,$(dir $^))
+[HM# automatic
+[HMJ2SDKDIR = /usr/lib/jvm/java-8-oracle
+[HM# environment
+[HMLOGNAME = ctran20
+[HM# environment
+[36;1H[K:[K[KMAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/ctran20/i240a/submit/lab1
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LEX = lex
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# environment
+SSH_CLIENT = 198.255.139.107 59320 22
+# environment
+MAIL = /var/mail/ctran20
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+:[K[K[HM# default
+[HMWEAVE = weave
+[HM# default
+[HM%D = $(patsubst %/,%,$(dir $%))
+[HM# automatic
+[HM.DEFAULT_GOAL := 
+[HM# makefile
+[HMFC = f77
+[HM# default
+[HMUSER = ctran20
+[HM# environment
+[HMXDG_SESSION_ID = 35702
+[HM# environment
+[HMCOMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+[HM# default
+[HMJAVA_HOME = /usr/lib/jvm/java-8-oracle
+[HM# environment
+[HMPREPROCESS.S = $(CC) -E $(CPPFLAGS)
+[HM# default
+[HMAS = as
+[HM# default
+[HMSHLVL = 1
+[HM# environment
+[HMMAKE = $(MAKE_COMMAND)
+[HM# default
+[HMCOMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+[HM# default
+[HMMAKELEVEL := 0
+[HM# environment
+[HM^D = $(patsubst %/,%,$(dir $^))
+[HM# automatic
+[HMJ2SDKDIR = /usr/lib/jvm/java-8-oracle
+[HM# environment
+[HMLOGNAME = ctran20
+[HM# environment
+[36;1H[K:[K[K:[K[K:[K[KMAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/ctran20/i240a/submit/lab1
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LEX = lex
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# environment
+SSH_CLIENT = 198.255.139.107 59320 22
+# environment
+MAIL = /var/mail/ctran20
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+:[K[K[?1l>[?1049l[23;0;0tctran20@remote03:~/i240a/submit/lab1/0-hello$ make -p | egrep 'cc|CXX
+> d
+> '
+make: *** No targets specified and no makefile found.  Stop.
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jan 30 10:44:10 2020
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+# environment
+XDG_SESSION_TYPE = tty
+# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/ctran20/projects/i240a/submit/lab1/0-hello
+# makefile
+SHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# environment
+_ = /usr/bin/make
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# default
+LINK.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# default
+OUTPUT_OPTION = -o $@
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile
+MAKEFILE_LIST := 
+# 'override' directive
+GNUMAKEFLAGS := 
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/14797/bus
+# default
+CC = cc
+# default
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# default
+CPP = $(CC) -E
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_14797_2QGAPsteP7
+# environment
+SSH_CONNECTION = 198.255.139.107 59320 128.226.114.203 22
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+# default
+LD = ld
+# default
+TEXI2DVI = texi2dvi
+# default
+YACC = yacc
+# environment
+SSH_TTY = /dev/pts/5
+# environment
+XDG_RUNTIME_DIR = /run/user/14797
+# default
+ARFLAGS = rv
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINT = lint
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# default
+YACC.m = $(YACC) $(YFLAGS)
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# default
+AR = ar
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# default
+TANGLE = tangle
+# default
+GET = get
+# automatic
+%F = $(notdir $%)
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+CTANGLE = ctangle
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# default
+LINK.C = $(LINK.cc)
+# environment
+PWD = /home/ctran20/i240a/submit/lab1/0-hello
+# default
+.LOADED := 
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XDG_SESSION_CLASS = user
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOME = /home/ctran20
+# environment
+J2REDIR = /usr/lib/jvm/java-8-oracle/jre
+# environment
+LOGNAME = ctran20
+# environment
+J2SDKDIR = /usr/lib/jvm/java-8-oracle
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+COMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# default
+AS = as
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# environment
+JAVA_HOME = /usr/lib/jvm/java-8-oracle
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environment
+XDG_SESSION_ID = 35702
+# environment
+USER = ctran20
+# default
+FC = f77
+# makefile
+.DEFAULT_GOAL := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+WEAVE = weave
+# default
+MAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/ctran20/i240a/submit/lab1
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LEX = lex
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# environment
+SSH_CLIENT = 198.255.139.107 59320 22
+# environment
+MAIL = /var/mail/ctran20
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+# default
+M2C = m2c
+# default
+MAKEFILES := 
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# default
+CXX = g++
+# default
+COFLAGS = 
+# default
+COMPILE.C = $(COMPILE.cc)
+# automatic
+^F = $(notdir $^)
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+DERBY_HOME = /usr/lib/jvm/java-8-oracle/db
+# default
+.RECIPEPREFIX := 
+# default
+MAKEINFO = makeinfo
+# default
+MAKE_TERMERR := /dev/pts/6
+# default
+OBJC = cc
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# default
+TEX = tex
+# environment
+LANG = en_US.UTF-8
+# environment
+TERM = xterm
+# default
+F77FLAGS = $(FFLAGS)
+# default
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# variable set hash-table stats:
+# Load=124/1024=12%, Rehash=0, Collisions=15/147=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# SCCS: could not be stat'd.
+# . (device 58, inode 22046212124): 5 files, 57 impossibilities.
+# RCS: could not be stat'd.
+
+# 5 files, 57 impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.out:
+
+%.a:
+
+%.ln:
+
+%.o:
+
+%: %.o
+#  recipe to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  recipe to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  recipe to execute (built-in):
+	$(LINT.c) -C$* $<
+
+%.o: %.c
+#  recipe to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  recipe to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  recipe to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.C:
+
+%: %.C
+#  recipe to execute (built-in):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.C
+#  recipe to execute (built-in):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  recipe to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+#  recipe to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  recipe to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  recipe to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  recipe to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  recipe to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.F:
+
+%: %.F
+#  recipe to execute (built-in):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.F
+#  recipe to execute (built-in):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+%.f: %.F
+#  recipe to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+%.m:
+
+%: %.m
+#  recipe to execute (built-in):
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.m
+#  recipe to execute (built-in):
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+%.r:
+
+%: %.r
+#  recipe to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  recipe to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  recipe to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  recipe to execute (built-in):
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+%.c: %.y
+#  recipe to execute (built-in):
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  recipe to execute (built-in):
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+%.c: %.l
+#  recipe to execute (built-in):
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+%.r: %.l
+#  recipe to execute (built-in):
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+%.ym:
+
+%.m: %.ym
+#  recipe to execute (built-in):
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+%.yl:
+
+%.s:
+
+%: %.s
+#  recipe to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  recipe to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+%.S:
+
+%: %.S
+#  recipe to execute (built-in):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.S
+#  recipe to execute (built-in):
+	$(COMPILE.S) -o $@ $<
+
+%.s: %.S
+#  recipe to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+%.mod:
+
+%: %.mod
+#  recipe to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  recipe to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  recipe to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  recipe to execute (built-in):
+	$(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  recipe to execute (built-in):
+	$(CTANGLE) $< - $@
+
+%.tex: %.w
+#  recipe to execute (built-in):
+	$(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  recipe to execute (built-in):
+	$(TANGLE) $<
+
+%.tex: %.web
+#  recipe to execute (built-in):
+	$(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  recipe to execute (built-in):
+	cat $< >$@ 
+	 chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  recipe to execute (built-in):
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  recipe to execute (built-in):
+	@rm -f $@ 
+	 cp $< $@
+
+%.c: %.w %.ch
+#  recipe to execute (built-in):
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  recipe to execute (built-in):
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  recipe to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  recipe to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  recipe to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: s.%
+#  recipe to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  recipe to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 92 implicit rules, 5 (5.4%) terminal.
+
+# Files
+
+# Not a target:
+.web.p:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(TANGLE) $<
+
+# Not a target:
+.l.r:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+# Not a target:
+.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.ym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.l:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.y:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.def.sym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+# Not a target:
+.p.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.p:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.txinfo.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.a:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.yl:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+# Not a target:
+.F.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.texi.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.w.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(CTANGLE) $< - $@
+
+# Not a target:
+.texi.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.ch:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cc:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.cc.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.def:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.c.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.r.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.r:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.ym.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+# Not a target:
+.y.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.elc:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+# Not a target:
+.out:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.C:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.r.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.S:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.w.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(CWEAVE) $< - $@
+
+# Not a target:
+.c.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINT.c) -C$* $<
+
+# Not a target:
+.s.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+# Not a target:
+.s:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.el:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.lm.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	@$(RM) $@ 
+	 $(LEX.m) $< > $@
+
+# Not a target:
+.y.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+# Not a target:
+.web.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(WEAVE) $<
+
+# Not a target:
+.texinfo:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.h:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.tex.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(TEX) $<
+
+# Not a target:
+.cpp.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cpp:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.C.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.texi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.sh:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	cat $< >$@ 
+	 chmod a+x $@
+
+# Not a target:
+.S.s:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+# Not a target:
+.mod:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+# Not a target:
+.mod.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+# Not a target:
+.F.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.w:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.S.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(COMPILE.S) -o $@ $<
+
+# Not a target:
+.F:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.web:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.sym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=75/1024=7%, Rehash=0, Collisions=447/1785=25%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 482 / storage = 6403 B / avg = 13 B
+# current buf: size = 8162 B / used = 6403 B / count = 482 / avg = 13 B
+
+# strcache performance: lookups = 812 / hit rate = 40%
+# hash-table stats:
+# Load=482/8192=6%, Rehash=0, Collisions=239/812=29%
+# Finished Make data base on Thu Jan 30 10:44:10 2020
+
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ make -p | egrep 'cc|CXX
+d
+'[K[K[A[C[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'
+make: *** No targets specified and no makefile found.  Stop.
+COMPILE.cpp = $(COMPILE.cc)
+CC = cc
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+KRB5CCNAME = FILE:/tmp/krb5cc_14797_2QGAPsteP7
+YACC = yacc
+LINK.C = $(LINK.cc)
+LINK.cpp = $(LINK.cc)
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+CXX = g++
+COMPILE.C = $(COMPILE.cc)
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+OBJC = cc
+%.cc:
+%: %.cc
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+%.o: %.cc
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+.cc:
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+.cc.o:
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+ctran20@remote03:~/i240a/submit/lab1/0-hello$ cd ..
+ctran20@remote03:~/i240a/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+ctran20@remote03:~/i240a/submit/lab1$ cd 1-monolithic/
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ a[Kmake fns-x[Kcompare.cc [K[K[K[K
+g++     fns-compare.cc   -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ ./fns-compare 
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+[01m[Kfns-compare.cc:11:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ make
+make: *** No targets specified and no makefile found.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ makeg++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./fns-compare [Kmake fns-compare
+g++     fns-compare.cc   -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ make fns-compare[Kg++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./fns-compare [K
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ ./fns-compare make fns-compare[Kg++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./fns-compare [Kmake fns-comparecd 1-monolithic/ls[Kcd ..make -p | egrep 'cc|CXX'cd ..[K[3Plscd 1-monolithic/make fns-compare[2P./fns-compare g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K clean
+make: *** No rule to make target 'clean'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ make clean./fns-compare make fns-compare[Kg++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+[01m[Kfns-compare.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kfns-compare.cc:22:18:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+     fprintf(out, [01;35m[K"%g %g\n"[m[K, n, linear(n), quadratic(n));
+                  [01;35m[K^~~~~~~~~[m[K
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[K./fns-compare make fns-compare
+g++     fns-compare.cc   -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ make fns-compare[37@g++ -g -Wall -std=c++17 fns-compare.cc -o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[K./fns-compare 
+1 100000 1000
+10 1e+06 100000
+100 1e+07 1e+07
+1000 1e+08 1e+09
+10000 1e+09 1e+11
+ctran20@remote03:~/i240a/submit/lab1/1-monolithic$ cd .. 
+ctran20@remote03:~/i240a/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+ctran20@remote03:~/i240a/submit/lab1$ cd 2-separate-compilation/
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ ls
+fns-compare.cc	fns-compare.hh	linear.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc 
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ ./fns-compare 
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ mv linear.cc quadratic.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ ;s[K[Kmv linear.cc quadratic.cc[C[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[1P quadratic.cc[C[1Pquadratic.cc[C[1P quadratic.cc[1P quadratic.ccc quadratic.ccp quadratic.cc[C[C[C[C[C[C[C[C[C[C[C[C[C linear.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ cp quadratic.cc linear.ccmv linear.cc quadratic.ccls[K./fns-compare g++ fns-compare.o linear.o -o fns-compare[5P-g -Wall -std=c++17 -c linear.ccfns-compare.cc ls[Kg++ -g -Wall -std=c++17 -c fns-compare.cc 
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc [17Pcp quadratic.cc linear.ccmv linear.cc quadratic.ccls[K./fns-compare g++ fns-compare.o linear.o -o fns-compare[5P-g -Wall -std=c++17 -c linear.ccfns-compare.cc [6Plinear.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.ccq.ccu.cca.ccd.ccr.cca.cct.cci.ccc.cc
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[3Plinear.ccfns-compare.cc [17Pcp quadratic.cc linear.ccmv linear.cc quadratic.ccls[K./fns-compare g++ fns-compare.o linear.o -o fns-compare[C[1@ [1@q[1@u[1@a[1@d[1@r[1@a[1@t[1@i[1@c[1@.[1@o[C[1@ [1P[C
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o quadratic.o -o fns-compare[14P-g -Wall -std=c++17 -c quadratic.cc[3Plinear.ccfns-compare.cc [17Pcp quadratic.cc linear.ccmv linear.cc quadratic.ccls[K./fns-compare g++ fns-compare.o linear.o -o fns-compare[27P./fns-compare 
+         n    linear quadratic
+         1     10000      1000
+        10    100000    100000
+       100     1e+06     1e+07
+      1000     1e+07     1e+09
+     10000     1e+08     1e+11
+    100000     1e+09     1e+13
+ctran20@remote03:~/i240a/submit/lab1/2-separate-compilation$ cd .. 
+ctran20@remote03:~/i240a/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+ctran20@remote03:~/i240a/submit/lab1$ cd 3-makefile/
+ctran20@remote03:~/i240a/submit/lab1/3-makefile$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/3-makefile$ ./fns-compare 
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+ctran20@remote03:~/i240a/submit/lab1/3-makefile$ 4454[K[K[K./fns-compare make[K
+make: Nothing to be done for 'all'.
+ctran20@remote03:~/i240a/submit/lab1/3-makefile$ cd ..
+ctran20@remote03:~/i240a/submit/lab1$ cd 4-dependencies/
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ ls
+constant.cc  cubic.cc  exponential.cc  fact.cc	fns-compare.cc	fns-compare.hh	lg.cc  linear.cc  Makefile  nlg.cc  quadratic.cc
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ make
+Makefile:20: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ ./fns-compare 
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ ./fns-compare make[K
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+[01m[Kfns-compare.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kfns-compare.cc:28:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%Lg[m[K’ expects argument of type ‘[01m[Klong double[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+       fprintf(out, [01;35m[K"%*.*Lg"[m[K, WIDTH, PREC, [32m[KfnInfo.fn(n)[m[K);
+                    [01;35m[K^~~~~~~~[m[K               [32m[K~~~~~~~~~~~~[m[K
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ make./fns-compare make[K
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+^[[Ag++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/4-dependencies$ make[K[K[K[Kcd ..
+ctran20@remote03:~/i240a/submit/lab1$ ;s
+bash: syntax error near unexpected token `;'
+ctran20@remote03:~/i240a/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+ctran20@remote03:~/i240a/submit/lab1$ cd 5-auto-dependencies/
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ ./fns-compare 
+    n   linear     n lg     fact     log2    cubic     expn constant    quadr
+    1    1e+05        0        1        0    1e+02       20    1e+07    1e+03
+   10    1e+06  3.3e+05  3.6e+06  3.3e+06    1e+05    1e+04    1e+07    1e+05
+  100    1e+07  6.6e+06 9.3e+157  6.6e+06    1e+08  1.3e+31    1e+07    1e+07
+ 1000    1e+08    1e+08      inf    1e+07    1e+11 1.1e+302    1e+07    1e+09
+10000    1e+09  1.3e+09      inf  1.3e+07    1e+14      inf    1e+07    1e+11
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:57: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:57: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:57: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:57: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:57: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+Makefile:25: *** missing separator.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ r[Ktar man
+tar: You must specify one of the '-Acdtrux', '--delete' or '--test-label' options
+Try 'tar --help' or 'tar --usage' for more information.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ man tar
+[?1049h[22;0;0t[?1h=TAR(1)                                                       GNU TAR Manual                                                       TAR(1)[m
+[m
+[1mNAME[0m[m
+       tar - an archiving utility[m
+[m
+[1mSYNOPSIS[0m[m
+   [1mTraditional[0m [1musage[0m[m
+       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[m
+   [1mUNIX-style[0m [1musage[0m[m
+       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[m
+       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-t[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+       [1mtar[0m [1m-r[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-u[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-x[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+   [1mGNU-style[0m [1musage[0m[m
+       [1mtar[0m {[1m--catenate[0m|[1m--concatenate[0m} [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[m
+       [1mtar[0m [1m--create[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m {[1m--diff[0m|[1m--compare[0m} [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m--delete[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+       [1mtar[0m [1m--append[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--list[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--test-label[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mLABEL[24m...][m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m {[1m--extract[0m|[1m--get[0m} [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mNOTE[0m[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This  manpage  is a short description of GNU [1mtar[0m.  For a detailed discussion, including examples and usage recommendations, refer[m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       to the [1mGNU[0m [1mTar[0m [1mManual[0m available in texinfo format.  If the [1minfo[0m reader and the tar documentation are properly installed  on  your[m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       system, the command[m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1minfo[0m [1mtar[0m[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       should give you access to the complete manual.[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       You can also view the manual using the info mode in [1memacs[0m(1), or find it in various formats online at[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mhttp://www.gnu.org/software/tar/manual[0m[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If any discrepancies occur between this manpage and the [1mGNU[0m [1mTar[0m [1mManual[0m, the later shall be considered the authoritative source.[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mDESCRIPTION[0m[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU  [1mtar[0m is an archiving program designed to store multiple files in a single file (an [1marchive[0m), and to manipulate such archives.[m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The archive can be either a regular file or a device (e.g. a tape drive, hence the name of the program,  which  stands  for  [1mt[0mape[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mar[0mchiver), which can be located either on the local or on a remote machine.[m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mOption[0m [1mstyles[0m[m
+[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Options  to GNU [1mtar[0m can be given in three different styles.  In [1mtraditional[0m [1mstyle[0m, the first argument is a cluster of option let‐[m
+[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ters and all subsequent arguments supply arguments to those options that require them.  The arguments are read in the same  order[m
+[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       as the option letters.  Any command line words that remain after all options has been processed are treated as non-optional argu‐[m
+[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ments: file or archive member names.[m
+[7m Manual page tar(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For example, the [1mc[0m option requires creating the archive, the [1mv[0m option requests the verbose operation, and the [1mf[0m option  takes  an[m
+[7m Manual page tar(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       argument  that  sets the name of the archive to operate upon.  The following command, written in the traditional style, instructs[m
+[7m Manual page tar(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar to store all files from the directory [1m/etc[0m into the archive file [1metc.tar[0m verbosely listing the files being archived:[m
+[7m Manual page tar(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1mcfv[0m [1ma.tar[0m [1m/etc[0m[m
+[7m Manual page tar(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In [1mUNIX[0m or [1mshort-option[0m [1mstyle[0m, each option letter is prefixed with a single dash, as in other command line utilities.  If an  op‐[m
+[7m Manual page tar(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tion  takes argument, the argument follows it, either as a separate command line word, or immediately following the option.  How‐[m
+[7m Manual page tar(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ever, if the option takes an [1moptional[0m argument, the argument must follow the option letter without any intervening whitespace, as[m
+[7m Manual page tar(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       in [1m-g/tmp/snar.db[0m.[m
+[7m Manual page tar(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Any number of options not taking arguments can be clustered together after a single dash, e.g. [1m-vkp[0m.  Options that take arguments[m
+[7m Manual page tar(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (whether mandatory or optional), can appear at the end of such a cluster, e.g. [1m-vkpf[0m [1ma.tar[0m.[m
+[7m Manual page tar(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The example command above written in the [1mshort-option[0m [1mstyle[0m could look like:[m
+[7m Manual page tar(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-cvf[0m [1ma.tar[0m [1m/etc[0m[m
+[7m Manual page tar(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or[m
+[7m Manual page tar(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-c[0m [1m-v[0m [1m-f[0m [1ma.tar[0m [1m/etc[0m[m
+[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In [1mGNU[0m or [1mlong-option[0m [1mstyle[0m, each option begins with two dashes and has a meaningful name, consisting of lower-case  letters  and[m
+[7m Manual page tar(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       dashes.  When used, the long option can be abbreviated to its initial letters, provided that this does not create ambiguity.  Ar‐[m
+[7m Manual page tar(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       guments to long options are supplied either as a separate command line word, immediately following the option, or separated  from[m
+[7m Manual page tar(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the option by an equals sign with no intervening whitespace.  Optional arguments must always use the latter method.[m
+[7m Manual page tar(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Here are several ways of writing the example command in this style:[m
+[7m Manual page tar(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--create[0m [1m--file[0m [1ma.tar[0m [1m--verbose[0m [1m/etc[0m[m
+[7m Manual page tar(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or (abbreviating some options):[m
+[7m Manual page tar(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--cre[0m [1m--file=a.tar[0m [1m--verb[0m [1m/etc[0m[m
+[7m Manual page tar(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The options in all three styles can be intermixed, although doing so with old options is not encouraged.[m
+[7m Manual page tar(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mOperation[0m [1mmode[0m[m
+[7m Manual page tar(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The  options listed in the table below tell GNU [1mtar[0m what operation it is to perform.  Exactly one of them must be given.  Meaning[m
+[7m Manual page tar(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       of non-optional arguments depends on the operation mode requested.[m
+[7m Manual page tar(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+[7m Manual page tar(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append archive to the end of another archive.  The arguments are treated as the names of archives to append.  All archives[m
+[7m Manual page tar(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              must  be  of  the  same format as the archive they are appended to, otherwise the resulting archive might be unusable with[m
+[7m Manual page tar(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              non-GNU implementations of [1mtar[0m.  Notice also that when more than one archive is given, the  members  from  archives  other[m
+[7m Manual page tar(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              than the first one will be accessible in the resulting archive only if using the [1m-i[0m ([1m--ignore-zeros[0m) option.[m
+[7m Manual page tar(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Compressed archives cannot be concatenated.[m
+[7m Manual page tar(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m, [1m--create[0m[m
+[7m Manual page tar(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Create  a new archive.  Arguments supply the names of the files to be archived.  Directories are archived recursively, un‐[m
+[7m Manual page tar(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              less the [1m--no-recursion[0m option is given.[m
+[7m Manual page tar(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--diff[0m, [1m--compare[0m[m
+[7m Manual page tar(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Find differences between archive and file system.  The arguments are optional and specify archive members to compare.   If[m
+[7m Manual page tar(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              not given, the current working directory is assumed.[m
+[7m Manual page tar(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--delete[0m[m
+[7m Manual page tar(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Delete  from the archive.  The arguments supply names of the archive members to be removed.  At least one argument must be[m
+[7m Manual page tar(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              given.[m
+[7m Manual page tar(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This option does not operate on compressed archives.  There is no short option equivalent.[m
+[7m Manual page tar(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m--append[0m[m
+[7m Manual page tar(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append files to the end of an archive.  Arguments have the same meaning as for [1m-c[0m ([1m--create[0m).[m
+[7m Manual page tar(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t[0m, [1m--list[0m[m
+[7m Manual page tar(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              List the contents of an archive.  Arguments are optional.  When given, they specify the names of the members to list.[m
+[7m Manual page tar(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--test-label[0m[m
+[7m Manual page tar(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Test the archive volume label and exit.  When used without arguments, it prints the volume label (if any) and  exits  with[m
+[7m Manual page tar(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              status [1m0[0m.  When one or more command line arguments are given.  [1mtar[0m compares the volume label with each argument.  It exits[m
+[7m Manual page tar(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with code [1m0[0m if a match is found, and with code [1m1[0m otherwise.  No output is displayed, unless  used  together  with  the  [1m-v[0m[m
+[7m Manual page tar(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ([1m--verbose[0m) option.[m
+[7m Manual page tar(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              There is no short option equivalent for this option.[m
+[7m Manual page tar(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-u[0m, [1m--update[0m[m
+[7m Manual page tar(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append  files  which are newer than the corresponding copy in the archive.  Arguments have the same meaning as with [1m-c[0m and[m
+[7m Manual page tar(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1m-r[0m options.  Notice, that newer files don't replace their old archive copies, but instead are appended to the end  of  ar‐[m
+[7m Manual page tar(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              chive.   The resulting archive can thus contain several members of the same name, corresponding to various versions of the[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              same file.[m
+[7m Manual page tar(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Extract files from an archive.  Arguments are optional.  When given, they specify names of the archive members to  be  ex‐[m
+[7m Manual page tar(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              tracted.[m
+[7m Manual page tar(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--show-defaults[0m[m
+[7m Manual page tar(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Show built-in defaults for various [1mtar[0m options and exit.  No arguments are allowed.[m
+[7m Manual page tar(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-?[0m, [1m--help[0m[m
+[7m Manual page tar(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Display a short option summary and exit.  No arguments allowed.[m
+[7m Manual page tar(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--usage[0m[m
+[7m Manual page tar(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Display a list of available options and exit.  No arguments allowed.[m
+[7m Manual page tar(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page tar(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Print program version and copyright information and exit.[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page tar(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mOperation[0m [1mmodifiers[0m[m
+[7m Manual page tar(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--check-device[0m[m
+[7m Manual page tar(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Check device numbers when creating incremental archives (default).[m
+[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-g[0m, [1m--listed-incremental[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Handle  new  GNU-format incremental backups.  [4mFILE[24m is the name of a [1msnapshot[0m [1mfile[0m, where tar stores additional information[m
+[7m Manual page tar(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              which is used to decide which files changed since the previous incremental dump and, consequently, must be  dumped  again.[m
+[7m Manual page tar(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              If  [4mFILE[24m  does not exist when creating an archive, it will be created and all files will be added to the resulting archive[m
+[7m Manual page tar(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              (the [1mlevel[0m [1m0[0m dump).  To create incremental archives of non-zero level [1mN[0m, create a copy of the snapshot file created during[m
+[7m Manual page tar(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the level [1mN-1[0m, and use it as [4mFILE[24m.[m
+[7m Manual page tar(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              When  listing  or  extracting, the actual contents of [4mFILE[24m is not inspected, it is needed only due to syntactical require‐[m
+[7m Manual page tar(1) line 145 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ make
+make: Nothing to be done for 'all'.
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ maken tartar manmake dist
+tar -cf fns-compare.tar Makefile *.cc *.hh
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ mkdir -p ~/tmp/fns-compare
+ctran20@remote03:~/i240a/submit/lab1/5-auto-dependencies$ cd ~/tmp/fns-compare
+ctran20@remote03:~/tmp/fns-compare$ tar -xvf ~/i240?/submit/lab1/5*/fns-compare.tar
+Makefile
+constant.cc
+cubic.cc
+exponential.cc
+fact.cc
+fns-compare.cc
+lg.cc
+linear.cc
+nlg.cc
+quadratic.cc
+fns-compare.hh
+ctran20@remote03:~/tmp/fns-compare$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+ctran20@remote03:~/tmp/fns-compare$ cd ..
+ctran20@remote03:~/tmp$ cd ..
+ctran20@remote03:~$ cd ..[K[K[K[K[Kls
+cs140  cs220  cs240  Desktop  Documents  Downloads  git-repos  i220a  i240a  Music  Pictures  projects	Public	Templates  tmp	Videos
+ctran20@remote03:~$ cd ii[K2
+i220a/ i240a/ 
+ctran20@remote03:~$ cd i240a
+ctran20@remote03:~/i240a$ cd lab[K[K[Ksubmit/lab1/
+ctran20@remote03:~/i240a/submit/lab1$ exit
+
+Script done on 2020-01-30 11:38:03-05:00 [COMMAND_EXIT_CODE="0"]
