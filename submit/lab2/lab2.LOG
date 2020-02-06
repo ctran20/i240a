@@ -1,0 +1,368 @@
+Script started on 2020-02-06 11:38:45-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="94" LINES="23"]
+bash: /home/umrigar/cs240/bin/student.rc: Permission denied
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd exw[Ker[K[K[K[K[K[K[K
+Display all 4481 possibilities? (y or n)
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ ls
+1-hello  2-hello  3-overload  lab2.LOG	Makefile
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd 1-hello/
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ make
+g++ -g -Wall -std=c++17    hello.cc   -o hello
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ ./hello 
+usage: ./hello NAME...
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ ./hello bart lisa
+hello bart
+hello lisa
+hello ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ ./hello bart lisa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start var[K[K[Kbart lisa
+Temporary breakpoint 1 at 0x11cd: file hello.cc, line 13.
+Starting program: /import/linux/home1/ctran20/projects/i240a/submit/lab2/1-hello/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe758) at hello.cc:13
+13	  if (argc == 1) {
+(gdb) l
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+12	{
+13	  if (argc == 1) {
+14	    std::cerr << "usage: " << argv[0] << " NAME..." << std::endl;
+15	    std::exit(1);
+16	  }
+17	  else {
+(gdb) b sayhe[K[KHwl[K[Kello
+Breakpoint 2 at 0x555555555181: file hello.cc, line 7.
+(gdb) p argc
+$1 = 3
+(gdb) p argv
+$2 = (const char **) 0x7fffffffe758
+(gdb) p argv[0]
+$3 = 0x7fffffffea4a "/import/linux/home1/ctran20/projects/i240a/submit/lab2/1-hello/hello"
+(gdb) p argv[0][1P]1]
+$4 = 0x7fffffffea8f "bart"
+(gdb) p *argv@3
+$5 = {0x7fffffffea4a "/import/linux/home1/ctran20/projects/i240a/submit/lab2/1-hello/hello", 
+  0x7fffffffea8f "bart", 0x7fffffffea94 "lisa"}
+(gdb) n
+18	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+19	      sayHello(argv[i]);
+(gdb) p i
+$6 = 1
+(gdb) c. sayHello()
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Breakpoint 2, sayHello (name=0x7fffffffea8f "bart") at hello.cc:7
+7	  std::cout << "hello " << name << std::endl;
+(gdb) l
+2	#include <cstdlib>
+3	
+4	static void
+5	sayHello(const char *name)
+6	{
+7	  std::cout << "hello " << name << std::endl;
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) lc. sayHello()bac[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbacktrace
+#0  sayHello (name=0x7fffffffea8f "bart") at hello.cc:7
+#1  0x0000555555555257 in main (argc=3, argv=0x7fffffffe758) at hello.cc:19
+(gdb) p argc
+No symbol "argc" in current context.
+(gdb) up
+#1  0x0000555555555257 in main (argc=3, argv=0x7fffffffe758) at hello.cc:19
+19	      sayHello(argv[i]);
+(gdb) p i
+$7 = 1
+(gdb) down
+#0  sayHello (name=0x7fffffffea8f "bart") at hello.cc:7
+7	  std::cout << "hello " << name << std::endl;
+(gdb) p name
+$8 = 0x7fffffffea8f "bart"
+(gdb) c. sayHello()
+A syntax error in expression, near `. sayHello()'.
+(gdb) c. sayHello()[K[K[K[K[K[K[K[K[K[K[K[K[Kc. sayHello()
+A syntax error in expression, near `. sayHello()'.
+(gdb) c. sayHello()[1P sayHello()[C[C[C[C[C[C[C
+Too few arguments in function call.
+(gdb) l
+2	#include <cstdlib>
+3	
+4	static void
+5	sayHello(const char *name)
+6	{
+7	  std::cout << "hello " << name << std::endl;
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) lc sayHello()[C[C[C[C[C[C[C. sayHello()[C[C[C[C[C[C[7Pp name[2Pdown[1Pp i[1Pupp argcbacktrace[C[C[C[C[C[Cl[Kc. sayHello()
+A syntax error in expression, near `. sayHello()'.
+(gdb) c. sayHello()[C[C[C[C[C[Cl[Kc sayHello()[C[C[C[C[C[C[C. sayHello()[C[C[C[C[C[C[7Pp name[2Pdown[1Pp i[1Pupp argcbacktrace[C[C[C[C[C[Cl[Kc. sayHello()[C[C[C[C[C[Cl[Kbacktrace[C[C[C[C[C[C[3Pp argc
+No symbol "argc" in current context.
+(gdb) up
+#1  0x0000555555555257 in main (argc=3, argv=0x7fffffffe758) at hello.cc:19
+19	      sayHello(argv[i]);
+(gdb) down[K[K[K[Kp down
+No symbol "down" in current context.
+(gdb) p down[4Pupp argcc. sayHello()
+A syntax error in expression, near `. sayHello()'.
+(gdb) p down[K[K[K[K[K[Ksow[K[K[Kdown
+#0  sayHello (name=0x7fffffffea8f "bart") at hello.cc:7
+7	  std::cout << "hello " << name << std::endl;
+(gdb) downq[K[K[K[K[Kq
+A debugging session is active.
+
+	Inferior 1 [process 1106765] will be killed.
+
+Quit anyway? (y or n) y
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ ls
+hello  hello.cc  Makefile  README
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ get[Kdu[Kit hello,x[K[K,.[K[K.cc
+
+(gedit:1108068): Gtk-[1;33mWARNING[0m **: [34m12:00:08.708[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ make
+g++ -g -Wall -std=c++17    hello.cc   -o hello
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ makegedit hello.ccls[Kgdb hello./hello bart lisa
+hello bart
+hello lisa
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/1-hello$ cd ..
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd ./2[K[K[K[K2[K 2-hello/
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ make
+g++ -g -Wall -std=c++17    hello.cc   -o hello
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ ./hello lisa bart
+Hello Lisa
+Hello Bart
+Segmentation fault
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ ./hello 'lisa simpson' 'b art'[K so[Kimpson'
+Hello Lisa SimpsoncU
+Hello Bart SimpsoncU
+Segmentation fault
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ gdb ./hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hello...done.
+(gdb) l
+22	    inWord = std::isalpha(in[i]);
+23	  }
+24	}
+25	
+26	static void
+27	sayHello(const char *name)
+28	{
+29	  std::cout << "Hello " << name << std::endl;
+30	}
+31	
+(gdb) n
+The program is not being run.
+(gdb) nl[Kstart lisa 'bart '[Ksimpson'
+Temporary breakpoint 1 at 0x12e1: file hello.cc, line 36.
+Starting program: /import/linux/home1/ctran20/projects/i240a/submit/lab2/2-hello/hello lisa 'bart simpson'
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe758) at hello.cc:36
+36	  if (argc == 1) {
+(gdb) n[Kb sayHello
+Breakpoint 2 at 0x55555555528c: file hello.cc, line 29.
+(gdb) c. sayHello(char const*) [K[K[K[K[K[K[K[K[K[K[K[K[K)
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Breakpoint 2, sayHello (name=0x7fffffffe600 "Lisa") at hello.cc:29
+29	  std::cout << "Hello " << name << std::endl;
+(gdb) l
+24	}
+25	
+26	static void
+27	sayHello(const char *name)
+28	{
+29	  std::cout << "Hello " << name << std::endl;
+30	}
+31	
+32	
+33	int
+(gdb) p name
+$1 = 0x7fffffffe600 "Lisa"
+(gdb) p argv
+No symbol "argv" in current context.
+(gdb) p argv[Kc
+No symbol "argc" in current context.
+(gdb) n
+Hello Lisa
+30	}
+(gdb) p name
+$2 = 0x7fffffffe600 "Lisa"
+(gdb) up
+#1  0x00005555555553f3 in main (argc=3, argv=0x7fffffffe758) at hello.cc:45
+45	      sayHello(friendlyName);
+(gdb) ls
+Undefined command: "ls".  Try "help".
+(gdb) l
+40	  else {
+41	    for (int i = 1; i <= argc; i++) {
+42	      const char *name = argv[i];
+43	      char friendlyName[strlen(name)];
+44	      upcaseWords(name, friendlyName);
+45	      sayHello(friendlyName);
+46	    }
+47	  }
+48	}
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 1108611] will be killed.
+
+Quit anyway? (y or n) y
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ gedit .h[K[Khello.cc
+
+(gedit:1108800): Gtk-[1;33mWARNING[0m **: [34m12:07:20.025[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+lsctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ ls[K[Kmake
+g++ -g -Wall -std=c++17    hello.cc   -o hello
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ makegedit hello.cc[3Pdb ./hello./hello 'lisa simpson' 'bart simpson'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Plisa bart
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Hello Lisa
+Hello Bart
+Segmentation fault
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ ./hello lisa bartmake[K./hello lisa bartmake[Kgedit hello.cc[3Pdb ./hello./hello 'lisa simpson' 'bart simpson'
+Hello Lisa Simpson
+Hello Bart Simpson
+Segmentation fault
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ gedit ./hello 'lisa simpson' 'bart simpson'[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./hello lisa bartmake[Kgedit hello.cc
+
+(gedit:1109033): Gtk-[1;33mWARNING[0m **: [34m12:08:31.588[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ gedit hello.cc[K./hello lisa bartmake[Kgedit hello.ccmake[K
+g++ -g -Wall -std=c++17    hello.cc   -o hello
+^[[Actran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ makegedit hello.cc[K[K[K[K[K[K[K[K[K[K[K[K[K[K./hello lisa bart
+Hello Lisa
+Hello Bart
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ ./hello lisa bartmake[K[K./hello lisa bartmake[Kgedit hello.cc[3Pdb ./hello./hello 'lisa simpson' 'bart simpson'
+Hello Lisa Simpson
+Hello Bart Simpson
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/2-hello$ cd ..
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd 3-overload/
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ make\[K
+g++ -g -Wall -std=c++17    overload.cc   -o overload
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ ./overload 
+f(a) = 3; f(&a) = 4; f(a, b) = -1
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ gbd overload
+bash: gbd: command not found
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ gbd overload[K[K[K[K[K[K[K[K[K[K[K[Kgdb overload
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from overload...done.
+(gdb) b f()
+Function "f()" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b f(int
+f(int)       f(int*)      f(int, int)  
+(gdb) b f(int*) 
+Breakpoint 1 at 0x117d: file overload.cc, line 3.
+(gdb) r
+Starting program: /import/linux/home1/ctran20/projects/i240a/submit/lab2/3-overload/overload 
+
+Breakpoint 1, f (a=0x7fffffffe668) at overload.cc:3
+3	int f(int *a) { return *a * 2; }
+(gdb) p a
+$1 = (int *) 0x7fffffffe668
+(gdb) p *a
+$2 = 2
+(gdb) p *a=5
+$3 = 5
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) y[Kr
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /import/linux/home1/ctran20/projects/i240a/submit/lab2/3-overload/overload 
+
+Breakpoint 1, f (a=0x7fffffffe668) at overload.cc:3
+3	int f(int *a) { return *a * 2; }
+(gdb) r[Kq
+A debugging session is active.
+
+	Inferior 1 [process 1109504] will be killed.
+
+Quit anyway? (y or n) y
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ gdb overloadbd[C[C[C[C[C[C[C[C[C[1P./overload 
+f(a) = 3; f(&a) = 4; f(a, b) = -1
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ ./overload gdb overload
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from overload...done.
+(gdb) p *a =5
+No symbol "a" in current context.
+(gdb) q
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ cd ..
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ ls
+1-hello  2-hello  3-overload  lab2.LOG	Makefile
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd 3-overload/
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ make
+make: 'overload' is up to date.
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ makecd 3-overload/[K[K[K[K[K[K[K[K[K[K[K[K[K[K./overload 
+f(a) = 3; f(&a) = 4; f(a, b) = -1
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2/3-overload$ cd ..
+ctran20@g7-05:/import/linux/home1/ctran20/i240a/submit/lab2$ cd ..[K[K[K[K[Kexit
+
+Script done on 2020-02-06 12:13:14-05:00 [COMMAND_EXIT_CODE="0"]
