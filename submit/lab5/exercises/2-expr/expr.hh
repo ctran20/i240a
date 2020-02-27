@@ -8,9 +8,9 @@
 
 
 class Expr : public ToString {
-public : 
-	virtual int eval() const = 0;
-	virtual std::string dcCode() const = 0;
+public:
+  virtual int eval() const = 0;
+  virtual std::string dcCode() const = 0;
 };
 
 //ExprPtr is an alias for a smart shared ptr to an Expr.
@@ -31,11 +31,13 @@ public:
 
   
   std::string toString() const;
-  int eval() const { return value; } ;
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
   IntExpr(int val, Private x) : value(val) { }
+
+  int eval() const { return value; }
+  std::string dcCode() const;
 
 }; //IntExpr
 
@@ -56,13 +58,16 @@ public:
   }
 
   std::string toString() const;
-  int eval() const;
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
   AddExpr(ExprPtr& left, ExprPtr& right, Private x) :
     left(left), right(right) {
   }
+
+  int eval() const { return left->eval() + right->eval(); }
+  std::string dcCode() const;
+  
 }; //AddExpr
 
 
@@ -79,13 +84,16 @@ public:
   }
 
   std::string toString() const;
-  int eval() const;
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
   SubExpr(ExprPtr& left, ExprPtr& right, Private x) :
     left(left), right(right) {
   }
+
+  int eval() const { return left->eval() - right->eval(); }
+  std::string dcCode() const;
+  
 }; //SubExpr
 
 
@@ -102,13 +110,16 @@ public:
   }
 
   std::string toString() const;
-  int eval() const;
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
   MulExpr(ExprPtr& left, ExprPtr& right, Private x) :
     left(left), right(right) {
   }
+
+  int eval() const { return left->eval() * right->eval(); }
+  std::string dcCode() const;
+  
 }; //MulExpr
 
 class DivExpr : public Expr {
@@ -124,13 +135,16 @@ public:
   }
 
   std::string toString() const;
-  int eval() const;
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
   DivExpr(ExprPtr& left, ExprPtr& right, Private x) :
     left(left), right(right) {
   }
+
+  int eval() const { return left->eval() / right->eval(); }
+  std::string dcCode() const;
+
 }; //DivExpr
 
 
