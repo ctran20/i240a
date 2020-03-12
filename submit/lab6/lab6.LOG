@@ -1,0 +1,476 @@
+Script started on 2020-03-11 19:41:19-04:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="100" LINES="35"]
+bash: /home/umrigar/cs240/bin/student.rc: Permission denied
+ctran20@remote05:~/i240a/submit/lab6$ [Kctran20@remote05:~/i240a/submit/lab6$ cp -r ~/[K[K[K[K[K[K[K[Kcp -r ~/cs240/labs/lab6/exercises .
+ctran20@remote05:~/i240a/submit/lab6$ los[K[Ks
+exercises  lab6.LOG
+ctran20@remote05:~/i240a/submit/lab6$ cd exercises/
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls
+4-quoting
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls
+4-quoting
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cd 4-quoting/
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls -l
+total 0
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 '**'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 '1$2'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 "'12"
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 '1"2'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 'a$b'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 '\\ab'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 'a"b'
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 "a'b"
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44  -l
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls ir[K[Kdir
+ls: cannot access 'dir': No such file or directory
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ cd ..
+ctran20@remote05:~/i240a/submit/lab6/exercises$ mk dir
+bash: mk: command not found
+ctran20@remote05:~/i240a/submit/lab6/exercises$ mkdir dir
+ctran20@remote05:~/i240a/submit/lab6/exercises$ touch t1.c[K[K[K[K[K[K[K[K[K[Ktouch t1.c T1.s v.c v1.s x.c dir/t2.c dir/T2.s1 dir/t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls\[K
+4-quoting  dir	t1.c  T1.s  v1.s  v.c  x.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -l
+total 0
+drwxr-x--- 2 ctran20 ctran20 135 Mar 11 19:44 4-quoting
+drwxr-x--- 2 ctran20 ctran20  54 Mar 11 20:11 dir
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 t1.c
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 T1.s
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 v1.s
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 v.c
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 x.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -x
+4-quoting  dir	t1.c  T1.s  v1.s  v.c  x.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -x^?[K[K[Kx
+ls: cannot access 'x': No such file or directory
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -tl
+total 0
+drwxr-x--- 2 ctran20 ctran20  54 Mar 11 20:11 dir
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 v1.s
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 v.c
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 x.c
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 T1.s
+-rw-r----- 1 ctran20 ctran20   0 Mar 11 20:11 t1.c
+drwxr-x--- 2 ctran20 ctran20 135 Mar 11 19:44 4-quoting
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls dir
+t2.c  T2.s1  t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls dir[C[C[C dirl dir[1P dir- dirn dirl dir
+total 0
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 t2.c
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 T2.s1
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -nl dir[C[1P dir
+total 0
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 t2.c
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 T2.s1
+-rw-r----- 1 14797 14797 0 Mar 11 20:11 t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -n dir[1@t[1P dirl dir
+total 0
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 20:11 t3
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 20:11 t2.c
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 20:11 T2.s1
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -tl dir[1P dir
+t3  t2.c  T2.s1
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls -t dir[1P dir[1P dir[1Pdir
+t2.c  T2.s1  t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ man touch
+[?1049h[22;0;0t[?1h=TOUCH(1)                                  User Commands                                  TOUCH(1)[m
+[m
+[1mNAME[0m[m
+       touch - change file timestamps[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtouch[0m [[4mOPTION[24m]... [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Update the access and modification times of each FILE to the current time.[m
+[m
+       A FILE argument that does not exist is created empty, unless [1m-c[0m or [1m-h[0m is supplied.[m
+[m
+       A  FILE  argument string of - is handled specially and causes touch to change the times of[m
+       the file associated with standard output.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m     change only the access time[m
+[m
+       [1m-c[0m, [1m--no-create[0m[m
+              do not create any files[m
+[m
+       [1m-d[0m, [1m--date[0m=[4mSTRING[24m[m
+              parse STRING and use it instead of current time[m
+[m
+       [1m-f[0m     (ignored)[m
+[m
+       [1m-h[0m, [1m--no-dereference[0m[m
+              affect each symbolic link instead of any referenced file (useful  only  on  systems[m
+              that can change the timestamps of a symlink)[m
+[m
+       [1m-m[0m     change only the modification time[m
+[7m Manual page touch(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote05:~/i240a/submit/lab6/exercises$ 
+ctran20@remote05:~/i240a/submit/lab6/exercises$ man touch
+[?1049h[22;0;0t[?1h=TOUCH(1)                                  User Commands                                  TOUCH(1)[m
+[m
+[1mNAME[0m[m
+       touch - change file timestamps[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtouch[0m [[4mOPTION[24m]... [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Update the access and modification times of each FILE to the current time.[m
+[m
+       A FILE argument that does not exist is created empty, unless [1m-c[0m or [1m-h[0m is supplied.[m
+[m
+       A  FILE  argument string of - is handled specially and causes touch to change the times of[m
+       the file associated with standard output.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m     change only the access time[m
+[m
+       [1m-c[0m, [1m--no-create[0m[m
+              do not create any files[m
+[m
+       [1m-d[0m, [1m--date[0m=[4mSTRING[24m[m
+              parse STRING and use it instead of current time[m
+[m
+       [1m-f[0m     (ignored)[m
+[m
+       [1m-h[0m, [1m--no-dereference[0m[m
+              affect each symbolic link instead of any referenced file (useful  only  on  systems[m
+              that can change the timestamps of a symlink)[m
+[m
+       [1m-m[0m     change only the modification time[m
+[7m Manual page touch(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote05:~/i240a/submit/lab6/exercises$ man ls
+[?1049h[22;0;0t[?1h=LS(1)                                     User Commands                                     LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information about the FILEs (the current directory by default).  Sort entries alpha‐[m
+       betically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M';  see  SIZE[m
+              format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote05:~/i240a/submit/lab6/exercises$ ls T*
+T1.s
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls dir/*.?
+dir/t2.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls[t-v]*.c
+bash: ls[t-v]*.c: command not found
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls[t-v]*.c [t-v]*.c
+t1.c  v.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls ../bin/?[p-s]*
+ls: cannot access '../bin/?[p-s]*': No such file or directory
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls ../bin/?[p-s]*[1P/bin/?[p-s]*[1P/bin/?[p-s]*
+/bin/cp    /bin/csh   /bin/ip  /bin/lsblk  /bin/openvt	/bin/ss    /bin/ypdomainname  /bin/zsh5
+/bin/cpio  /bin/grep  /bin/ls  /bin/lsmod  /bin/ps	/bin/true  /bin/zsh
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls /t[Ketc/ *[K[K*.rc
+/etc/mail.rc  /etc/slsh.rc
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls /etc/*.rc[Kbin/?[p-s]*[K[K[K[K[K[K[K???
+/bin/cat  /bin/csh  /bin/dir  /bin/pwd	/bin/red  /bin/sed  /bin/tar  /bin/zsh
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls > ls.log
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat ls.log
+4-quoting
+dir
+ls.log
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat > cat.lohg[K[Kg
+as
+asd   emily
+lilk
+thik
+q
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat cat.log
+as
+emily
+lilk
+thik
+q
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls dir >> los[K[Ks.log
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat ls.log
+4-quoting
+dir
+ls.log
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+t2.c
+T2.s1
+t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat ls.log[6@ls dir >>[C[C[C[C[C[C[C[1P ls.log
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls dir > ls.log[5Pcat[C[C[C[C[C[C[C
+t2.c
+T2.s1
+t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat ls.log[5@ls dir >[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat < ls.log
+t2.c
+T2.s1
+t3
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls | wc -l
+9
+ctran20@remote05:~/i240a/submit/lab6/exercises$ 
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls | wc -l[K[K[K
+      9       9      52
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls | wc[K[K[K[K[K[K[Kls | wc -l[C[1@ [1@/[1@b[1@i[1@n[1@/[1P[1P[1P[1P[1@/[1@b[1@i[1@n[1@/[1P[1P[1P[1P[1P[1P[1@\[1@b[1P[1P[1@/[1@b[1@i[1@n[1@/[1@?[1@?[1@?[1@?
+23
+ctran20@remote05:~/i240a/submit/lab6/exercises$ ls /bin/c* > bin-c.log
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat bin-c.log 
+/bin/cat
+/bin/chacl
+/bin/chgrp
+/bin/chmod
+/bin/chown
+/bin/chvt
+/bin/cp
+/bin/cpio
+/bin/csh
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cat bin-c.log | wc -l
+9
+ctran20@remote05:~/i240a/submit/lab6/exercises$ man tr
+[?1049h[22;0;0t[?1h=TR(1)                                     User Commands                                     TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writing to standard out‐[m
+       put.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed in the last  specified[m
+              SET, with a single occurrence of that character[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs  are specified as strings of characters.  Most represent themselves.  Interpreted se‐[m
+       quences are:[m
+[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[m
+       \v     vertical tab[m
+[m
+       CHAR1-CHAR2[m
+              all characters from CHAR1 to CHAR2 in ascending order[m
+[m
+       [CHAR*][m
+              in SET2, copies of CHAR until length of SET1[m
+[m
+       [CHAR*REPEAT][m
+              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[m
+       [:alnum:][m
+              all letters and digits[m
+[m
+       [:alpha:][m
+              all letters[m
+[m
+[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K       [:blank:][m
+              all horizontal whitespace[m
+[m
+       [:cntrl:][m
+              all control characters[m
+[m
+       [:digit:][m
+              all digits[m
+[m
+       [:graph:][m
+              all printable characters, not including space[m
+[m
+       [:lower:][m
+              all lower case letters[m
+[m
+       [:print:][m
+              all printable characters, including space[m
+[m
+       [:punct:][m
+              all punctuation characters[m
+[m
+       [:space:][m
+              all horizontal or vertical whitespace[m
+[m
+       [:upper:][m
+              all upper case letters[m
+[m
+       [:xdigit:][m
+              all hexadecimal digits[m
+[m
+       [=CHAR=][m
+              all characters which are equivalent to CHAR[m
+[m
+[7m Manual page tr(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K       Translation occurs if [1m-d[0m is not given and both SET1 and SET2 appear.  [1m-t[0m may be used  only[m
+       when  translating.   SET2 is extended to length of SET1 by repeating its last character as[m
+       necessary.  Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guar‐[m
+       anteed to expand in ascending order; used in SET2 while translating, they may only be used[m
+       in pairs to specify case conversion.  [1m-s[0m uses the last specified  SET,  and  occurs  after[m
+       translation or deletion.[m
+[m
+[1mAUTHOR[0m[m
+       Written by Jim Meyering.[m
+[m
+[1mREPORTING[0m [1mBUGS[0m[m
+       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+       Report tr translation bugs to <https://translationproject.org/team/>[m
+[m
+[1mCOPYRIGHT[0m[m
+       Copyright  ©  2018  Free  Software  Foundation, Inc.  License GPLv3+: GNU GPL version 3 or[m
+       later <https://gnu.org/licenses/gpl.html>.[m
+       This is free software: you are free to change and redistribute it.  There is NO  WARRANTY,[m
+       to the extent permitted by law.[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+       Full documentation at: <https://www.gnu.org/software/coreutils/tr>[m
+       or available locally via: info '(coreutils) tr invocation'[m
+[m
+GNU coreutils 8.30                        February 2019                                     TR(1)[m
+[7m Manual page tr(1) line 92/124 (END) (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m Manual page tr(1) line 92/124 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote05:~/i240a/submit/lab6/exercises$ ls[K[Kman tr
+[?1049h[22;0;0t[?1h=TR(1)                                     User Commands                                     TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writing to standard out‐[m
+       put.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed in the last  specified[m
+              SET, with a single occurrence of that character[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs  are specified as strings of characters.  Most represent themselves.  Interpreted se‐[m
+       quences are:[m
+[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tctran20@remote05:~/i240a/submit/lab6/exercises$ ls | tr “[:lower:]” “[:upper:]”
+4-QUOTING
+BIN-C.LOG
+CAT.LOG
+DIR
+LS.LOG
+T1.C
+T1.S
+V1.S
+V.C
+X.C
+ctran20@remote05:~/i240a/submit/lab6/exercises$ cd 4-quoting/
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls\[K
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo \\
+\
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo \\[K'
+'
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo \'[K*
+*
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo \*[K$HOME\"\\
+$HOME"\
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo ''^?\[K[K[K\'
+\
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo '\'\'
+\\
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo '\\'[1P'[1P'*'$'!'[1P'~'
+*$~
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo '\''
+> a'
+\
+a
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo"\[K[K |[K"\"\\"
+"\
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo "$HOME"
+/home/ctran20
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ echo\[K \
+> av[Kbc \
+> 123 \
+> 
+abc 123
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls '*[K[K"[K*"s[K[K[K'[K*'$'*
+'1$2'  'a$b'
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls *'$'*[C[1P*[1P*[1P*"*'*"*
+"'12"  "a'b"
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls *"'"*[1P*[1P*[1P*[K'*\*'*
+'\\ab'
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls '\'*[K[K[K[K??
+-rw-r----- 1 ctran20 ctran20 0 Mar 11 19:44 '**'
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls ??[C[K[K--
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ ls -- ??
+'**'   -l
+ctran20@remote05:~/i240a/submit/lab6/exercises/4-quoting$ cd ..
+ctran20@remote05:~/i240a/submit/lab6/exercises$ exit
+
+Script done on 2020-03-11 21:00:18-04:00 [COMMAND_EXIT_CODE="0"]
