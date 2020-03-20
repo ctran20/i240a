@@ -1,6 +1,6 @@
 #include "arrayseq.hh"
 #include "command.hh"
-#include "dlinkseq.hh"
+//#include "dlinkseq.hh"
 #include "seq.hh"
 
 #include <cctype>
@@ -19,8 +19,8 @@ struct NameToSeq {
 //this structure keeps track of smart pointers to sequences, ensuring
 //that the sequences will automatically be cleaned up on program exit.
 static const NameToSeq nameSeqMap[] = {
-  { "ArraySeq", ArraySeq<TestType>::make() },
-  { "DLinkSeq", DLinkSeq<TestType>::make() },
+   "ArraySeq", ArraySeq<TestType>::make() 
+  //{ "DLinkSeq", DLinkSeq<TestType>::make() },
 };
 static const int nSeqs = sizeof(nameSeqMap)/sizeof(nameSeqMap[0]);
 
