@@ -1,0 +1,771 @@
+Script started on 2020-04-02 10:47:02-04:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="100" LINES="35"]
+ctran20@remote05:~/i240a/submit/lab9$ ls
+exercises  lab9.log
+ctran20@remote05:~/i240a/submit/lab9$ cd exercises/
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd exe[K[K[K[K[K[Kcd 1
+bash: cd: 1: No such file or directory
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd 1[K1[K[K[K[Kls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd[K[Kseq
+seq: missing operand
+Try 'seq --help' for more information.
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 5
+1
+2
+3
+4
+5
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 5[K21[K 11
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 2 11[C[K[K5
+2
+3
+4
+5
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 2 525 5[C[K11
+2
+4
+6
+8
+10
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 2 2 11[K[K[K[K[K[K11 -2 2
+11
+9
+7
+5
+3
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 11 -2 2[1P 2[1P 22 2
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 11 2 2[C[1@-[C[C[C[1P2 2 11[C 112 11
+seq: extra operand ‘11’
+Try 'seq --help' for more information.
+ctran20@remote05:~/i240a/submit/lab9/exercises$ seq 2 2 2 11f1o1r1 1[1P1[1P1[1P1[1P1[K[1P1[1P1[1P1[1P1[1P1[1P1[1P1[1P1[1P1[1P1[Kfor x in 22 33 44
+> do echo $x
+> done
+22
+33
+44
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 22 33 44; do echo $x; done
+22
+33
+44
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 22 33 44; do echo $x; done[1P
+x
+x
+x
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 22 33 44; do echo x; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor x in `seq 100 -20 0`; do echo $x; done
+100
+80
+60
+40
+20
+0
+ctran20@remote05:~/i240a/submit/lab9/exercises$ echo $RANDOM
+17940
+ctran20@remote05:~/i240a/submit/lab9/exercises$ echo $RANDOM
+19738
+ctran20@remote05:~/i240a/submit/lab9/exercises$ echo $RANDOM
+32572
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 'seq 50';do r[Kecho $[K-n "$RANDOM"; done
+19501ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 'seq 50';do echo -n "$RANDOM"; done
+8865ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 'seq 50';do echo -n "$RANDOM"; done
+9728ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 50`; do echo -n " $RANDOM "; done
+ 32233  184  28494  10269  9270  4063  1245  1844  29862  28096  22937  2110  8663  21802  19394  27167  21613  32010  7250  25851  20242  16367  29256  29825  19354  28409  16565  15070  38  22416  14020  14242  966  26649  26595  26874  9557  1039  7641  10095  2574  9177  8062  8237  29388  15518  22699  30683  25490  4567 ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 50`; do echo -n " $RANDOM "; done[3P'seq 50';do echo -n "$RANDOM[C[C[C[C[C[C[C[3@`seq 50`; do echo -n " $RANDOM [C[C[C[C[C[C[C[Kls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+ctran20@remote05:~/i240a/submit/lab9/exercises$ lsfor x in `seq 50`; do echo -n " $RANDOM "; done[3P'seq 50';do echo -n "$RANDOM[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'[K"[K'seq 50';do echo -n "$RANDOM"; doneecho $RANDOM[Kfor x in `seq 100 -20 0`; do echo $x; done[8P22 33 44; do echo [C[C[C[C[C[C[C[8@`seq 100 -20 0`; do echo $[C[C[C[C[C[C[C
+100
+80
+60
+40
+20
+0
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 100 -20 0`; do echo $x; done[1P[1@"
+> 
+> ^C
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 100 -20 0"; do echo $x; done
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@"
+seq 100 -20 0
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in "seq 100 -20 0"; do echo $x; done[C[1P[1@\[1P[1@'[1P[1@'
+seq 100 -20 0
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in 'seq 100 -20 0'; do echo $x; done[C[C[1P[1@)[C[1P[1@(
+bash: syntax error near unexpected token `('
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in (seq 100 -20 0); do echo $x; done[1P[C[C[1P
+seq
+100
+-20
+0
+ctran20@remote05:~/i240a/submit/lab9/exercises$ '[Kfor x in `seq 50`; do echo -n " $RANDOM "; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor x in `seq 0 -2=[K0[K[K[K1 10`; do echo $x; done
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 10`; do echo $x; done[1@"[1@ [1@"
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 10`; do echo "$x "; done[C[C[C[1@ 
+ 0 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+ 10 
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 10`; do echo " $x "; done[C[1P[C[C[C[1@ [1@-[1@n
+0 1 2 3 4 5 6 7 8 9 10 ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 10`; do echo -n "$x "; done > ac[Ksce e[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+ctran20@remote05:~/i240a/submit/lab9/exercises$ lsfor x in `seq 0 1 10`; do echo -n "$x "; done > asce nding.dat
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 10`; do echo -n "$x "; done > ascending.dat[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0`; do echo -n "$x "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0`; do echo -n "$x "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0`; do echo -n "$x "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0`; do echo -n "$x "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 0 1 100000`; do echo -n "$x "; done > ascending.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[C[C[1P.dat[C[1P.datd.dat[Ce.dat[C[Cs.datc.date.datn.datd.dati.datn.datg.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 100000`; do echo -n "$x "; done > de[1Pscending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C100000`; do echo -n "$x "; done > des[1Pcending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C100000`; do echo -n "$x "; done > desc[1Pending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C100000`; do echo -n "$x "; done > desce[1Pnding.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C `; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1`; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C `; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0`; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-1 0`; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ctran20@remote05:~/i240a/submit/lab9/exercises$ for x in `seq 100000 -1 0`; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 1 100000`; do echo -n "$x "; done > a[2Pscending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C100000 -1 0`; do echo -n "$x "; done > descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 1 100000`; do echo -n "$x "; done > a[2Pscending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "; done > as[1Pcending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CR "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CA "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CD "; done > ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CO "; done[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM "; don[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.dat[1P.datr.data.datn.datd.dato.datm.dat
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd 2-sorts/
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ ./mian[K[K[Kain
+bash: ./main: No such file or directory
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ make -f ../Makefile
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o main.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ ./main 
+usage: ./main [-v] ALGORITHM INTS_DATA_FILE|- [N...]
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 1-[K00 -8 0 | ./main -v inssert[K[K[K[Ket[KrtionSort -
+4 12 20 28 36 44 52 60 68 76 84 92 100 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -8 0 | ./main -v insertionSort -[1P
+unknown algorithm - must be one of insertionSort|bubbleSort|selectionSort|mergeSort|quickSort
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -8 0 | ./main - insertionSort -[1P[1P
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -8 0 | ./main insertionSort -[2@- [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+4 12 20 28 36 44 52 60 68 76 84 92 100 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -8 0 | ./main -v insertionSort -[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@e[1@c[1@h[1@o[C[1@ [1P[1P[1P[1P[1P[Cecho $RANDOM $RANDOM $RANDOM $RANDOM | ./main -v insertionSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $RANDOM $RANDOM $RANDOM $RANDOM | ./main[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+660 5391 10201 20662 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -4 0 | ./main -v selectionSort - 4 7 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $RANDOM $RANDOM $RANDOM $RANDOM | ./main -v insertionSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pseq 100 -8 0 | ./main -v insertionSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $RANDOM $RANDOM $RANDOM $RANDOM | ./main -v insertionSort -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -[1P -m -e -r -g -e -S -o -r -t -
+3926 11560 18884 25882 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ echo $RANDOM $RANDOM $RANDOM $RANDOM | ./main -v mergeSort -[C[C[C[C[C[4@insertion[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kseq 100 -4 0 | ./main -v selectionSort - 4 7 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K7
+88 92 96 100 
+60 64 68 72 76 80 84 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -4 0 | ./main -v bubbleSort - 4 7
+88 92 96 100 
+60 64 68 72 76 80 84 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -4 0 | ./main -v bubbleSort - 4 7[C[K[K[K1 2 3  4
+100 
+92 96 
+80 84 88 
+64 68 72 76 
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ seq 100 -4 0 | ./main  bubbleSort - 4 7
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ al[K[Kalg0="insertionSort bubbleSort selectionSort"
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$  alg1="mergeSort quickSort"
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ for a in $alg0 $alg1; do \
+>     echo "*** $a"; \
+>     time ./main $a ../random.dat 10000; \
+>   done
+*** insertionSort
+
+real	0m0.225s
+user	0m0.222s
+sys	0m0.001s
+*** bubbleSort
+
+real	0m0.449s
+user	0m0.446s
+sys	0m0.001s
+*** selectionSort
+
+real	0m0.183s
+user	0m0.177s
+sys	0m0.005s
+*** mergeSort
+
+real	0m0.008s
+user	0m0.006s
+sys	0m0.001s
+*** quickSort
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+ctran20@remote05:~/i240a/submit/lab9/exercises/2-sorts$ cd.[K ..
+ctran20@remote05:~/i240a/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd 3-stats/
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT ops.o -MMD -MP -MF .deps/ops.d -g -Wall -std=c++17 -c ops.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile[8Pcd 3-stats/ls[Kcd ..for a in $alg0 $alg1; do     echo "*** $a";     time ./main $a ../random.dat 10000;   done[A[C[C[C[C[C[C[C[C[C[C[17P alg1="mergeSort quickSort"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Calg0="insertionSort bubbleSort selectionSort"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pseq 100 -4 0 | ./main  bubbleSort - 4 7
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v bubbleSort - 1 2 3 4[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P4 7
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 2 3 4[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P4 7
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+88 92 96 100 
+60 64 68 72 76 80 84 
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./man[Kin quickSort ../random.dat `seq 10000 10000 100000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main quickSort ../random.dat `seq 10000 10000 100000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ cat > count.cc
+^C
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ cat > count.cc./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pseq 100 -4 0 | ./main -v bubbleSort - 4 7
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pmake -f ../Makefile
+g++ -MT count.o -MMD -MP -MF .deps/count.d -g -Wall -std=c++17 -c count.cc
+[01m[Kcount.cc:1:26:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+ class Count : public Ops [01;31m[K{[m[K
+                          [01;31m[K^[m[K
+[01m[Kcount.cc:14:1:[m[K [01;31m[Kerror: [m[K‘[01m[KOps[m[K’ has not been declared
+ [01;31m[KOps[m[K::compare(int a, int b) {
+ [01;31m[K^~~[m[K
+[01m[Kcount.cc:[m[K In function ‘[01m[Kint compare(int, int)[m[K’:
+[01m[Kcount.cc:15:2:[m[K [01;31m[Kerror: [m[K‘[01m[KswapCount[m[K’ was not declared in this scope
+  [01;31m[KswapCount[m[K++;
+  [01;31m[K^~~~~~~~~[m[K
+[01m[Kcount.cc:15:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KCount[m[K’
+  [01;36m[KswapCount[m[K++;
+  [01;36m[K^~~~~~~~~[m[K
+  [32m[KCount[m[K
+[01m[Kcount.cc:[m[K At global scope:
+[01m[Kcount.cc:21:1:[m[K [01;31m[Kerror: [m[K‘[01m[KOps[m[K’ has not been declared
+ [01;31m[KOps[m[K::swap(int a[], int i, int j)
+ [01;31m[K^~~[m[K
+[01m[Kcount.cc:[m[K In function ‘[01m[Kvoid swap(int*, int, int)[m[K’:
+[01m[Kcount.cc:23:2:[m[K [01;31m[Kerror: [m[K‘[01m[KcompareCount[m[K’ was not declared in this scope
+  [01;31m[KcompareCount[m[K++;
+  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Kcount.cc:23:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcompare[m[K’
+  [01;36m[KcompareCount[m[K++;
+  [01;36m[K^~~~~~~~~~~~[m[K
+  [32m[Kcompare[m[K
+make: *** [../Makefile:48: count.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT count.o -MMD -MP -MF .deps/count.d -g -Wall -std=c++17 -c count.cc
+[01m[Kcount.cc:1:26:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+ class Count : public Ops [01;31m[K{[m[K
+                          [01;31m[K^[m[K
+make: *** [../Makefile:48: count.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT count.o -MMD -MP -MF .deps/count.d -g -Wall -std=c++17 -c count.cc
+[01m[Kcount.cc:1:19:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+ class Count : Ops [01;31m[K{[m[K
+                   [01;31m[K^[m[K
+make: *** [../Makefile:48: count.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT count.o -MMD -MP -MF .deps/count.d -g -Wall -std=c++17 -c count.cc
+[01m[Kcount.cc:1:7:[m[K [01;31m[Kerror: [m[K‘[01m[KCount[m[K’ has not been declared
+ class [01;31m[KCount[m[K :: public Ops {
+       [01;31m[K^~~~~[m[K
+[01m[Kcount.cc:1:16:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Kpublic[m[K’
+ class Count :: [01;31m[Kpublic[m[K Ops {
+                [01;31m[K^~~~~~[m[K
+[01m[Kcount.cc:1:16:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+make: *** [../Makefile:48: count.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT count.o -MMD -MP -MF .deps/count.d -g -Wall -std=c++17 -c count.cc
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile[5Pcat > count.cc./main quickSort ../random.dat `seq 10000 10000 100000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main quickSort ../random.dat `seq 10000 10000 100000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v bubbleSort - 4 7
+88 92 96 100 
+60 64 68 72 76 80 84 
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v bubbleSort - 4 7[C[1P[1P[1P[1P[1P[1P[1@q[1@u[1@i[1@c[1@k
+88 92 96 100 
+60 64 68 72 76 80 84 
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[1@bubble[C[C[C[C[C[C[C[C[C[C./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, int)[m[K’:
+[01m[Kmain.cc:92:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klength[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kint*[m[K’
+  std::cout << a.[01;31m[Klength[m[K << std::endl;
+                 [01;31m[K^~~~~~[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:90:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid newOutArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KnewOutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, int)[m[K’:
+[01m[Kmain.cc:92:23:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Ka[m[K’ will return size of ‘[01m[Kint*[m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  std::cout << sizeof(a[01;35m[K)[m[K << std::endl;
+                       [01;35m[K^[m[K
+[01m[Kmain.cc:90:17:[m[K [01;36m[Knote: [m[Kdeclared here
+ newOutArray([01;36m[Kint a[][m[K, int n)
+             [01;36m[K~~~~^~~[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:90:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid newOutArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KnewOutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, int)[m[K’:
+[01m[Kmain.cc:92:23:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Ka[m[K’ will return size of ‘[01m[Kint*[m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  std::cout << sizeof(a[01;35m[K)[m[K << std::endl;
+                       [01;35m[K^[m[K
+[01m[Kmain.cc:90:17:[m[K [01;36m[Knote: [m[Kdeclared here
+ newOutArray([01;36m[Kint a[][m[K, int n)
+             [01;36m[K~~~~^~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7
+88 92 96 100 
+8
+60 64 68 72 76 80 84 
+8
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7[1@bubble[C[C[C[C[C[C[C[C[C[C./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pseq 100 -4 0 | ./main -v bubbleSort - 4 7
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pquick[C[C[C[C[C[C[C[C[C[C[21Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7
+8
+8
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7
+4
+7
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:101:3:[m[K [01;31m[Kerror: [m[K‘[01m[KCount[m[K’ was not declared in this scope
+   [01;31m[KCount[m[K ops;
+   [01;31m[K^~~~~[m[K
+[01m[Kmain.cc:102:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kops[m[K’ was not declared in this scope
+   sort(a, n, &[01;31m[Kops[m[K);
+               [01;31m[K^~~[m[K
+[01m[Kmain.cc:102:15:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KOps[m[K’
+   sort(a, n, &[01;36m[Kops[m[K);
+               [01;36m[K^~~[m[K
+               [32m[KOps[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+
+[01m[Kmain.cc:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ 
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kseq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7
+4
+7
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, Count)[m[K’:
+[01m[Kmain.cc:93:32:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KCount[m[K’
+  std::cout << sizeof(&a) << ops[01;31m[K->[m[KswapCount << std::endl;
+                                [01;31m[K^~[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7
+88
+823
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[K[K[K[K
+8123
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ seq 100 -4 0 | ./main -v quickSort - 4 7[21Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:82:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefileseq 100 -4 0 | ./main -v quickSort - 4 7[K
+8 46 123
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done > ../ascending.dat
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../[1Pascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pseq 100 -4 0 | ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../[1Pascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pseq 100 -4 0 | ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pmake -f ../Makefileseq 100 -4 0 | ./main -v quickSort -[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1Pascending.dat `seq 2000 2000 10000`| ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v q[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v qu[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v qui[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quic[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quick[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickS[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSor[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSort[1P -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSort [1P-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSort -[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| ./main -v quickSort - [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1@c[C[1@a[1@t[1@ 
+cat: ascending.dat: No such file or directory
+8 0 0
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ cat ascending.dat| ./main -v quickSort -./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../[1Pascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pseq 100 -4 0 | ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../ascending.dat[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor f in `seq 100000`; do echo $f; done > [K[K| ./main -v quickSort -
+8 131070 1534481
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat ascending.dat| ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, Count)[m[K’:
+[01m[Kmain.cc:84:23:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Ka[m[K’ will return size of ‘[01m[Kint*[m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  std::cout << sizeof(a[01;35m[K)[m[K << " " << ops.compareCount << " " << ops.swapCount << std::endl;
+                       [01;35m[K^[m[K
+[01m[Kmain.cc:82:17:[m[K [01;36m[Knote: [m[Kdeclared here
+ newOutArray([01;36m[Kint a[][m[K, Count ops)
+             [01;36m[K~~~~^~~[m[K
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefilefor f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat ascending.dat| ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat ascending.dat| ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat ascending.dat| ./main -v quickSort -
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done | ./main -v quickSort -
+8 131070 1534481
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done | ./main -v quickSort -
+8 131070 1534481
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, Count)[m[K’:
+[01m[Kmain.cc:84:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kint*[m[K’
+  std::cout << a.[01;31m[Ksize[m[K << " " << ops.compareCount << " " << ops.swapCount << std::endl;
+                 [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid newOutArray(int*, Count)[m[K’:
+[01m[Kmain.cc:84:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  std::cout << sizeof(a*[01;31m[K)[m[K << " " << ops.compareCount << " " << ops.swapCount << std::endl;
+                        [01;31m[K^[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefilefor f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefilefor f in `seq 100000`; do echo $f; done | ./main -v quickSort -
+8 131070 1534481
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o ops.o main.o count.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o ops.o main.o count.o; do echo $t >>.gitignore; done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ make -f ../Makefilefor f in `seq 100000`; do echo $f; done | ./main -v quickSort -
+100000 131070 1534481
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done | ./main -v quickSort -[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done | ./main -v quickSort -./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  cannot read -./main: No such file or directory
+Aborted
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for a in $alg0; do \
+>     ./main $a ../random.dat `seq 1000 1000 10000` > $a.dat; \
+>   done
+
+^C
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for a in $alg1; do \
+>     ./main $a ../random.dat `seq 10000 10000 100000` > $a.dat; \
+>   done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for a in $alg0; do \
+>     ./main $a ../random.dat `seq 1000 1000 10000` > $a.dat; \
+>   done
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for a in $alg0 $alg1; do ../plot $a.dat > $a.png; done
+bash: ../plot: No such file or directory
+bash: ../plot: No such file or directory
+bash: ../plot: No such file or directory
+bash: ../plot: No such file or directory
+bash: ../plot: No such file or directory
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ for f in $alg0 $alg1; do display $f.png; done
+display-im6.q16: unable to open X server `' @ error/display.c/DisplayImageCommand/433.
+display-im6.q16: unable to open X server `' @ error/display.c/DisplayImageCommand/433.
+display-im6.q16: unable to open X server `' @ error/display.c/DisplayImageCommand/433.
+display-im6.q16: unable to open X server `' @ error/display.c/DisplayImageCommand/433.
+display-im6.q16: unable to open X server `' @ error/display.c/DisplayImageCommand/433.
+ctran20@remote05:~/i240a/submit/lab9/exercises/3-stats$ cd .. 
+ctran20@remote05:~/i240a/submit/lab9/exercises$ cd 4-time/
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ make
+make: *** No targets specified and no makefile found.  Stop.
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ makecd 4-time/[K[K[K[K[K[K[K[K[K[Knm[Ka[K[Kmaek -[K[K[K[Kke 0[K-f ../Makefile
+g++ -MT now.o -MMD -MP -MF .deps/now.d -g -Wall -std=c++17 -c now.cc
+g++ now.o -o main
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../Makefile:18: main] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ cat > maim[Kn.cc
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include <cstdlib>
+#include <cstring>
+
+#include "sorts.hh"
+
+/** Return vector of n int's read from filePath into a[].  If filePath
+ *  is "-" read from stdin.  If n < 0, read entire contents of file.
+ */
+static std::vector<int>
+readIntsFromFile(const std::string filePath, int n)
+{
+  bool isStdin = filePath == "-";
+  std::ifstream file;
+  if (!isStdin) file.open(filePath);
+  std::istream& in = (isStdin) ? std::cin : file;
+  if (!in) {
+    throw std::invalid_argument(std::string("cannot read ") + filePath +
+				": " + std::strerror(errno));
+  }
+  std::vector<int> ints;
+  for (int i = 0; n < 0 || i < n; ++i) {
+    int v;
+    in >> v;
+    if (in.eof()) {
+      if (n > 0) {
+	std::cerr << "got eof on while reading " << filePath
+		  << " after reading " << i << " ints; expected " << n
+		  << std::endl;
+	std::exit(1);
+      }
+      break;
+    }
+    ints.push_back(v);
+  }
+  return ints;
+}
+
+//type for pointer to a sorting function 
+using SortP = void (*)(int a[], int n);
+
+//map algorithm name to corresponding function
+struct Algorithm {
+  std::string name;
+  SortP sort;
+};
+
+static Algorithm algorithms[] = {
+  { "insertionSort", insertionSort },
+  { "bubbleSort", bubbleSort },
+  { "selectionSort", selectionSort },
+  { "mergeSort", mergeSort },
+  { "quickSort", quickSort },
+};
+
+/** Return sorting function specified by name; terminate program
+ *  if not valid.
+ */
+static SortP
+getSort(std::string name)
+{
+  std::string names;
+  for (auto i = 0u; i < sizeof(algorithms)/sizeof(algorithms[0]); ++i) {
+    const std::string algName = algorithms[i].name;
+    if (algName == name) return algorithms[i].sort;
+    if (names.size() > 0) names += "|";
+    names += algName;
+  } 
+  std::cerr << "unknown algorithm " << name
+	    << " must be one of " << names << std::endl;
+  std::exit(1);
+}
+
+/** Output a line containing whitespace separated contents of a [0, n) */
+static void
+outArray(int a[], int n)
+{
+  for (int i = 0; i < n; i++) {
+    std::cout << a[i] << " ";
+  }
+  std::cout << std::endl;
+}
+
+
+static void
+go(SortP sort, std::string filePath, bool isVerbose, int nRead)
+{
+  std::vector<int> ints = readIntsFromFile(filePath, nRead);
+  int* a = ints.data();
+  int n = ints.size();
+  long t0 = now();
+  sort(a, n);
+  long t1 = now();
+  if (isVerbose) outArray(a, n);
+}
+
+int
+main(int argc, char* argv[]) {
+  if (argc < 3) {
+    std::cerr << "usage: " << argv[0]
+	      << " [-v] ALGORITHM INTS_DATA_FILE|- [N...]" << std::endl;
+    std::exit(1);
+  }
+  bool isVerbose = std::strcmp(argv[1], "-v") == 0;
+  bool nVerbose = (isVerbose) ? 1 : 0;
+  const char* algorithm = argv[1 + nVerbose];
+  const std::string filePath(argv[2 + nVerbose]);
+  SortP sort = getSort(algorithm);
+  int sizeArgsIndex = 3 + nVerbose;
+  if (sizeArgsIndex == argc) {
+    go(sort, filePath, isVerbose, -1);
+  }
+  else {
+    for (int i = sizeArgsIndex; i < argc; ++i) {
+      int nRead = atoi(argv[i]);
+      go(sort, filePath, isVerbose, nRead);
+    }
+  }
+}
+
+^C
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ cat > main.ccmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:9:10:[m[K [01;31m[Kfatal error: [m[Ksorts.hh: No such file or directory
+ #include [01;31m[K"sorts.hh"[m[K
+          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:53:22:[m[K [01;31m[Kerror: [m[K‘[01m[KinsertionSort[m[K’ was not declared in this scope
+   { "insertionSort", [01;31m[KinsertionSort[m[K },
+                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Kmain.cc:54:19:[m[K [01;31m[Kerror: [m[K‘[01m[KbubbleSort[m[K’ was not declared in this scope
+   { "bubbleSort", [01;31m[KbubbleSort[m[K },
+                   [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.cc:55:22:[m[K [01;31m[Kerror: [m[K‘[01m[KselectionSort[m[K’ was not declared in this scope
+   { "selectionSort", [01;31m[KselectionSort[m[K },
+                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Kmain.cc:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[KmergeSort[m[K’ was not declared in this scope
+   { "mergeSort", [01;31m[KmergeSort[m[K },
+                  [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:57:18:[m[K [01;31m[Kerror: [m[K‘[01m[KquickSort[m[K’ was not declared in this scope
+   { "quickSort", [01;31m[KquickSort[m[K },
+                  [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:57:18:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kquick_exit[m[K’
+   { "quickSort", [01;36m[KquickSort[m[K },
+                  [01;36m[K^~~~~~~~~[m[K
+                  [32m[Kquick_exit[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:95:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   long [01;35m[Kt0[m[K = now();
+        [01;35m[K^~[m[K
+[01m[Kmain.cc:97:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   long [01;35m[Kt1[m[K = now();
+        [01;35m[K^~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:53:22:[m[K [01;31m[Kerror: [m[K‘[01m[KinsertionSort[m[K’ was not declared in this scope
+   { "insertionSort", [01;31m[KinsertionSort[m[K },
+                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Kmain.cc:54:19:[m[K [01;31m[Kerror: [m[K‘[01m[KbubbleSort[m[K’ was not declared in this scope
+   { "bubbleSort", [01;31m[KbubbleSort[m[K },
+                   [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.cc:55:22:[m[K [01;31m[Kerror: [m[K‘[01m[KselectionSort[m[K’ was not declared in this scope
+   { "selectionSort", [01;31m[KselectionSort[m[K },
+                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[Kmain.cc:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[KmergeSort[m[K’ was not declared in this scope
+   { "mergeSort", [01;31m[KmergeSort[m[K },
+                  [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:57:18:[m[K [01;31m[Kerror: [m[K‘[01m[KquickSort[m[K’ was not declared in this scope
+   { "quickSort", [01;31m[KquickSort[m[K },
+                  [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:57:18:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kquick_exit[m[K’
+   { "quickSort", [01;36m[KquickSort[m[K },
+                  [01;36m[K^~~~~~~~~[m[K
+                  [32m[Kquick_exit[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:95:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   long [01;35m[Kt0[m[K = now();
+        [01;35m[K^~[m[K
+[01m[Kmain.cc:97:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   long [01;35m[Kt1[m[K = now();
+        [01;35m[K^~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+ctran20@remote05:~/i240a/submit/lab9/exercises/4-time$ cd ..
+ctran20@remote05:~/i240a/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+ctran20@remote05:~/i240a/submit/lab9/exercises$ ^C
+ctran20@remote05:~/i240a/submit/lab9/exercises$ ^C
+ctran20@remote05:~/i240a/submit/lab9/exercises$ exit
+
+Script done on 2020-04-02 13:40:59-04:00 [COMMAND_EXIT_CODE="130"]
