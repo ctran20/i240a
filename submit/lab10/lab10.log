@@ -1,0 +1,367 @@
+Script started on 2020-04-19 19:47:51-04:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="100" LINES="35"]
+ctran20@remote04:~/i240a/submit/lab10$ cp -r ~/cs240/labs/lab10/exercises .
+ctran20@remote04:~/i240a/submit/lab10$ ls
+exercises  lab10.log
+ctran20@remote04:~/i240a/submit/lab10$ cd exercises/
+ctran20@remote04:~/i240a/submit/lab10/exercises$ ls
+1-fact	2-tdd  Makefile
+ctran20@remote04:~/i240a/submit/lab10/exercises$ cd 1-fact/
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile
+g++ -I /home/ctran20/cs240/include -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -I /home/ctran20/cs240/include -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ main.o fact.o -o main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+^Cmake: *** [../Makefile:62: test-main.o] Interrupt
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile main
+make: 'main' is up to date.
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile main[C[C[K[C[1@ [1@c[1@l[1@e[1@a[1@n[1P[1P[1P ../Makefile[1P../Makefile[C[1P/Makefile[1P/Makefile[1PMakefile[1Pakefile[1Pkefile[1Pefile[1Pfile[1Pile[1Ple[1Pe[K\[K
+make: *** No rule to make target 'clean'.  Stop.
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make clean-f ../Makefile main[K[K[K[Kclean
+rm -rf *.o *~ main test-main .deps .gitignore
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile cleanclean[K-f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -I /home/ctran20/cs240/include -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ main.o fact.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 2 3 5 10
+2
+6
+120
+3628800
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 2 3 5 10make -f ../Makefile maintmainemainsmaintmain-main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+./t   g++ test-main.o fact.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./test-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (4 assertions in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 0
+0
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 0test-main make -f ../Makefile test-main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o fact.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile test-main./main 0[Ktest-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mFactorials are computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:8: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( fact(0) == 1 )
+[0mwith expansion:
+[1;33m  0 == 1
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./test-main make -f ../Makefile test-main./main 0[Ktest-main make -f ../Makefile test-main[14P./main 2 3 5 10make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ main.o fact.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile main[12P./test-main make -f ../Makefile test-main./main 0[Ktest-main make -f ../Makefile test-main[14P./main 2 3 5 10
+2
+6
+120
+3628800
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 2 3 5 10[C[1@ [1@0
+1
+2
+6
+120
+3628800
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 0 2 3 5 10[2P[C[C[C[C[C[C[C[C 11
+2
+6
+120
+3628800
+39916800
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./main 2 3 5 10 11[1P0 2 3 5 10[2P[C[C[C[C[C[C[C[Cmake -f ../Makefile main[12P./test-main make -f ../Makefile test-main[17P./test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mFactorials are computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:8: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( fact(0) == 1 )
+[0mwith expansion:
+[1;33m  0 == 1
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ ./test-main main 2 3 5 10 11[1P0 2 3 5 10[2P[C[C[C[C[C[C[C[Cmake -f ../Makefile main[12P./test-main make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main./main 0[Ktest-main make -f ../Makefile test-main[14P./main 2 3 5 10make -f ../Makefile main[9P./main 2 3 5 10make -f ../Makefile test-main
+g++ test-main.o fact.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ make -f ../Makefile test-main[17P./test-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (5 assertions in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/1-fact$ cd ..
+ctran20@remote04:~/i240a/submit/lab10/exercises$ ls
+1-fact	2-tdd  Makefile
+ctran20@remote04:~/i240a/submit/lab10/exercises$  cd 2-tdd/
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./make [K[K[K[K[K[K[Kmake -f ../Makrfile
+make: ../Makrfile: No such file or directory
+make: *** No rule to make target '../Makrfile'.  Stop.
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makrfile[1Pfileefile
+g++ -I /home/ctran20/cs240/include -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:8:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+g++ main.o digit-sum.o -o main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile 
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main [K-test
+bash: ./main-test: No such file or directory
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main-test[K[K[K[K[K[K[K[K[Ktest-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (1 assertion in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main [1Pmain-test [K[13@make -f ../Makefile[C[K [Krfileefile test-main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:9: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum("7") == 7 )
+[0mwith expansion:
+[1;33m  0 == 7
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 2[0;37m | [0m[0;32m1 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main[K[K[K[K[K[K[K[10P./test-main [K./test-main [K./test-main make -f ../Makefile te[10P./test-main make -f ../Makefile te[10P./test-main [1Pmain-test [K[13@make -f ../Makefile[C[K [K
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:10:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope
+   if (isdigit(c)) [01;31m[Kacc[m[K += *p - '0';
+                   [01;31m[K^~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[7P./test-main make -f ../Makefile te[K[K[K
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+g++ test-main.o digit-sum.o -o test-main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main test-main digit-sum.o; do echo $t >>.gitignore; done
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile[7P./test-main make -f ../Makefile test-main[17P./test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:7: [0m[1;31mFAILED:
+[0mdue to a fatal error condition:
+  SIGSEGV - Segmentation violation signal
+
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main[12P./test-main make -f ../Makefile[7P./test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:7: [0m[1;31mFAILED:
+[0mdue to a fatal error condition:
+  SIGSEGV - Segmentation violation signal
+
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:7: [0m[1;31mFAILED:
+[0mdue to a fatal error condition:
+  SIGSEGV - Segmentation violation signal
+
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 1[0;37m | [0m[1;31m1 failed[0m
+
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main [4Pmain 1test-main make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main[12P./test-main [4Pmain 1
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main[16P./main 1
+Segmentation fault
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1make -f ../Makefile main[16P./main 1make -f ../Makefile main[12P./test-main make -f ../Makefile main[16P./main 1make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:33:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ was not declared in this scope
+  for (const char* p = str; p != [01;31m[KNULL[m[K; ++p) {
+                                 [01;31m[K^~~~[m[K
+[01m[Kdigit-sum.cc:11:33:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[01m[Kdigit-sum.cc:4:1:[m[K
++[32m[K#include <cstddef>[m[K
+ 
+[01m[Kdigit-sum.cc:11:33:[m[K
+  for (const char* p = str; p != [01;36m[KNULL[m[K; ++p) {
+                                 [01;36m[K^~~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:11:33:[m[K [01;31m[Kerror: [m[KISO C++ forbids comparison between pointer and integer [[01;31m[K-fpermissive[m[K]
+  for (const char* p = str; p != [01;31m[K'\0'[m[K; ++p) {
+                                 [01;31m[K^~~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main[16P./main 1make -f ../Makefile main[16P./main 1
+1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1make -f ../Makefile main[16P./main 1make -f ../Makefile main[16P./main 1make -f ../Makefile main[16P./main 1make -f ../Makefile maintmainemainsmaintmain-main
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (2 assertions in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main make -f ../Makefile test-main./main 1[Kmake -f ../Makefile main[16P./main 1make -f ../Makefile test-main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main[17P./test-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (5 assertions in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main make -f ../Makefile test-main
+g++ -I /home/ctran20/cs240/include -MT test-main.o -MMD -MP -MF .deps/test-main.d -g -Wall -std=c++17 -c test-main.cc
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile test-main[17P./test-main 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0;37mtest-main is a Catch v2.11.3 host application.
+Run with -? for options
+
+[0m-------------------------------------------------------------------------------
+[0mdigit sums computed
+[0m-------------------------------------------------------------------------------
+[0;37mtest-main.cc:7
+...............................................................................
+
+[0m[0;37mtest-main.cc:13: [0m[1;31mFAILED:
+[0m[0;36m  REQUIRE( digitSum(" 8 + x + 4") == 8 )
+[0mwith expansion:
+[1;33m  12 == 8
+[0m
+[1;31m===============================================================================[0m[1;33m[0m[0;32m[0m
+test cases: 1[0;37m | [0m[1;31m1 failed[0m
+assertions: 6[0;37m | [0m[0;32m5 passed[0m[0;37m | [0m[1;31m1 failed[0m
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./test-main make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main./main 1[Kmake -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+[01m[Kdigit-sum.cc:[m[K In function ‘[01m[Kint digitSum(const char*)[m[K’:
+[01m[Kdigit-sum.cc:14:8:[m[K [01;31m[Kerror: [m[K‘[01m[KwantDigit[m[K’ was not declared in this scope
+    if ([01;31m[KwantDigit[m[K) {
+        [01;31m[K^~~~~~~~~[m[K
+[01m[Kdigit-sum.cc:23:8:[m[K [01;31m[Kerror: [m[K‘[01m[KwantDigit[m[K’ was not declared in this scope
+    if ([01;31m[KwantDigit[m[K) break;
+        [01;31m[K^~~~~~~~~[m[K
+[01m[Kdigit-sum.cc:24:4:[m[K [01;31m[Kerror: [m[K‘[01m[KwantDigit[m[K’ was not declared in this scope
+    [01;31m[KwantDigit[m[K = true;
+    [01;31m[K^~~~~~~~~[m[K
+make: *** [../Makefile:62: digit-sum.o] Error 1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main
+g++ -I /home/ctran20/cs240/include -MT digit-sum.o -MMD -MP -MF .deps/digit-sum.d -g -Wall -std=c++17 -c digit-sum.cc
+g++ main.o digit-sum.o -o main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile main[12P./test-main make -f ../Makefile test-main[17P./test-main make -f ../Makefile test-main
+g++ test-main.o digit-sum.o -o test-main
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ make -f ../Makefile test-main[5Pmain[12P./test-main make -f ../Makefile test-main[17P./test-main 
+[1;31m[0m[1;33m[0m[1;32m===============================================================================[0m
+[1;32mAll tests passed[0m (6 assertions in 1 test case)
+
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+2+3+4+5+6
+21
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+2+3+4+5+6[1P+6x+6
+10
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+2+3+4+x+6[C[C[1P+3+4+x+6[C+3+4+x+6
+1
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+++3+4+x+6[C[1P3+4+x+61+3+4+x+61+3+4+x+6
+2
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+11+3+4+x+6[1P+3+4+x+6[1P+3+4+x+62+3+4+x+6[1P+3+4+x+62+3+4+x+6[C[C[1P+4+x+6[1P4+x+60+4+x+6[C+4+x+6
+3
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ ./main 1+20++4+x+6[C[C[C[1P++4+x+6[Cc+4+x+6
+3
+ctran20@remote04:~/i240a/submit/lab10/exercises/2-tdd$ cd ..
+ctran20@remote04:~/i240a/submit/lab10/exercises$ ;s
+bash: syntax error near unexpected token `;'
+ctran20@remote04:~/i240a/submit/lab10/exercises$ ^C
+ctran20@remote04:~/i240a/submit/lab10/exercises$ exit
+
+Script done on 2020-04-19 21:03:04-04:00 [COMMAND_EXIT_CODE="130"]
