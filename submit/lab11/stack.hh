@@ -8,7 +8,6 @@ public:
 	int Pop(int(&arr)[16], int delim);
 	bool IsEmpty(int arr[]);
 	int Size(int arr[]);
-	//Error();
 };
 
 #endif //!STACK_HH

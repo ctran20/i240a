@@ -63,7 +63,7 @@ int Size(int arr[]) {
 	return i;
 }
 
-//Return 0 if invalid delim
+//Return 0 if invalid delimn
 int getDelimEncoding(char delim)
 {
 	for (int i = 0; i < delimSize; i++) {
@@ -74,6 +74,7 @@ int getDelimEncoding(char delim)
 	return 0;
 };
 
+//---------------------------------Main-------------------------------------------
 int main(int argc, char *argv[]) {
 	int stk[16];
 	int stkIndex = 0;
