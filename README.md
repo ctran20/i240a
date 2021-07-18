@@ -1,2 +1,2 @@
 # i240a
-CS 240
+Multiple projects and labs worked in C++ about Data Structures and Algorithms.
